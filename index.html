@@ -1,1 +1,454 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Morgan - Resume</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #eef2f7;
+      color: #273444;
+      line-height: 1.6;
+    }
+
+    .resume {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: 1100px;
+    }
+
+    /* LEFT COLUMN */
+    .sidebar {
+      background: #172554;
+      color: #ffffff;
+      padding: 35px 28px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .profile-photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: #38bdf8;
+      margin: 0 auto 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      font-weight: bold;
+      color: #172554;
+    }
+
+    .profile baba {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    .profile yoga {
+      color: #bae6fd;
+      font-size: 14px;
+    }
+
+    .sidebar-section {
+      margin-bottom: 30px;
+    }
+
+    .sidebar-section h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #38bdf8;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    .contact-item {
+      font-size: 13px;
+      margin-bottom: 10px;
+      word-break: break-word;
+    }
+
+    .skills {
+      list-style: none;
+    }
+
+    .skills li {
+      font-size: 13px;
+      margin-bottom: 9px;
+      padding-left: 12px;
+      position: relative;
+    }
+
+    .skills li::before {
+      content: "•";
+      color: #38bdf8;
+      position: absolute;
+      left: 0;
+    }
+
+    .languages p {
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    /* MAIN CONTENT */
+    .main {
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      color: #172554;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 7px;
+      margin-bottom: 18px;
+    }
+
+    .summary {
+      color: #4b5563;
+      font-size: 14px;
+    }
+
+    .job {
+      margin-bottom: 24px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 4px;
+    }
+
+    .job h3 {
+      font-size: 16px;
+      color: #111827;
+    }
+
+    .company {
+      color: #0284c7;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .date {
+      color: #6b7280;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .job ul {
+      margin: 8px 0 0 18px;
+      color: #4b5563;
+      font-size: 13px;
+    }
+
+    .job li {
+      margin-bottom: 5px;
+    }
+
+    .education-item {
+      margin-bottom: 16px;
+    }
+
+    .education-item h3 {
+      font-size: 15px;
+      color: #111827;
+    }
+
+    .education-item p {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .project {
+      margin-bottom: 18px;
+    }
+
+    .project h3 {
+      font-size: 15px;
+      color: #111827;
+    }
+
+    .project p {
+      font-size: 13px;
+      color: #4b5563;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      margin: 5px 4px 0 0;
+    }
+
+    @media (max-width: 700px) {
+      .resume {
+        margin: 0;
+        display: block;
+      }
+
+      .sidebar {
+        padding: 30px 25px;
+      }
+
+      .main {
+        padding: 30px 25px;
+      }
+
+      .job-header {
+        display: block;
+      }
+
+      .date {
+        display: block;
+        margin-top: 3px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .resume {
+        margin: 0;
+        box-shadow: none;
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="resume">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="profile">
+        <div class="profile-photo">AM</div>
+        <h1>Alex Morgan</h1>
+        <p>Full Stack Developer</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Contact</h2>
+
+        <div class="contact-item">
+          📞 +91 98765 43210
+        </div>
+
+        <div class="contact-item">
+          ✉️ alex.morgan@email.com
+        </div>
+
+        <div class="contact-item">
+          📍 Mumbai, Maharashtra, India
+        </div>
+
+        <div class="contact-item">
+          🔗 linkedin.com/in/alexmorgan
+        </div>
+
+        <div class="contact-item">
+          💻 github.com/alexmorgan
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Skills</h2>
+
+        <ul class="skills">
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Python</li>
+          <li>SQL & MongoDB</li>
+          <li>Git & GitHub</li>
+          <li>REST APIs</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section languages">
+        <h2>Languages</h2>
+        <p>English — Fluent</p>
+        <p>Hindi — Fluent</p>
+        <p>Marathi — Native</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Interests</h2>
+        <p class="contact-item">Technology</p>
+        <p class="contact-item">Photography</p>
+        <p class="contact-item">Travel</p>
+        <p class="contact-item">Open Source</p>
+      </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+      <section class="section">
+        <h2>Profile</h2>
+
+        <p class="summary">
+          Results-driven Full Stack Developer with 4+ years of experience
+          building scalable web applications and responsive user interfaces.
+          Strong knowledge of modern JavaScript frameworks, backend
+          development, databases, and REST APIs. Passionate about writing
+          clean code and creating simple, user-friendly digital experiences.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Work Experience</h2>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <h3>Senior Full Stack Developer</h3>
+              <div class="company">TechNova Solutions</div>
+            </div>
+            <div class="date">Jan 2023 – Present</div>
+          </div>
+
+          <ul>
+            <li>Developed scalable web applications using React, Node.js and PostgreSQL.</li>
+            <li>Improved application performance by approximately 35% through code optimization.</li>
+            <li>Designed and integrated RESTful APIs for internal and customer-facing applications.</li>
+            <li>Mentored junior developers and participated in code reviews.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <h3>Web Developer</h3>
+              <div class="company">DigitalWorks Pvt. Ltd.</div>
+            </div>
+            <div class="date">Jun 2021 – Dec 2022</div>
+          </div>
+
+          <ul>
+            <li>Built responsive websites using HTML, CSS, JavaScript and React.</li>
+            <li>Collaborated with designers to convert UI/UX designs into production-ready interfaces.</li>
+            <li>Integrated third-party APIs and payment services.</li>
+            <li>Maintained and improved existing web applications.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <h3>Junior Web Developer</h3>
+              <div class="company">CreativeCode Studio</div>
+            </div>
+            <div class="date">Jul 2020 – May 2021</div>
+          </div>
+
+          <ul>
+            <li>Created landing pages and business websites for clients.</li>
+            <li>Fixed UI bugs and improved cross-browser compatibility.</li>
+            <li>Worked with Git and participated in agile development processes.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="section">
+        <h2>Projects</h2>
+
+        <div class="project">
+          <h3>Expense Management Platform</h3>
+
+          <p>
+            Developed a full-stack expense management application allowing
+            users to track expenses, generate reports and visualize spending
+            patterns.
+          </p>
+
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">MongoDB</span>
+        </div>
+
+        <div class="project">
+          <h3>E-Commerce Website</h3>
+
+          <p>
+            Built a responsive e-commerce platform with product search,
+            shopping cart, authentication and online payment integration.
+          </p>
+
+          <span class="tag">React</span>
+          <span class="tag">Express</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+          <h3>Bachelor of Engineering — Computer Science</h3>
+          <p>University of Mumbai · 2016 – 2020</p>
+        </div>
+
+        <div class="education-item">
+          <h3>Higher Secondary Certificate</h3>
+          <p>Maharashtra State Board · 2016</p>
+        </div>
+
+      </section>
+
+      <section class="section">
+        <h2>Certifications</h2>
+
+        <div class="education-item">
+          <h3>Meta Front-End Developer Professional Certificate</h3>
+          <p>Meta · 2022</p>
+        </div>
+
+        <div class="education-item">
+          <h3>JavaScript Algorithms and Data Structures</h3>
+          <p>freeCodeCamp · 2021</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
